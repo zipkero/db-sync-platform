@@ -775,6 +775,9 @@ db_sync_lag_seconds = now - last_processed_changed_at
 - [ ] Snapshot Mode 설계 확정
 - [ ] Snapshot Store 구현
 - [ ] Snapshot Diff 구현
+- [ ] `snapshot_sweep` delete 전략 설계 확정 (upsert 폴링과 분리된 PK 집합 diff 기반 삭제 감지)
+- [ ] `snapshot_sweep` 전용 스케줄(별도 interval) 및 sweep query contract 구현
+- [ ] `snapshot_sweep` 삭제 이벤트 발행 구현
 
 ## Kubernetes 배포 목표
 
